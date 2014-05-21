@@ -1,0 +1,8 @@
+<h1>Statuses</h1>
+<% @statuses.each do |status| %>
+  <%= status.inspect %>
+  <br />
+<% end %>
+
+<%= link_to "Update", update_statuses_path, :method => :post %>
+
