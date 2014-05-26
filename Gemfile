@@ -45,3 +45,5 @@ end
 
 gem 'nokogiri'
 gem 'httparty'
+#gem 'sucker_punch', '~> 1.0'
+gem 'purecss-rails'

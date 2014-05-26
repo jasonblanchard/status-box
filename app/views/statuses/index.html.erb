@@ -1,8 +1,10 @@
 <h1>Statuses</h1>
 <% @statuses.each do |status| %>
-  <%= status.inspect %>
-  <br />
+  <div class='status'>
+    <h2><%= status.name %></h2>
+    Status: <%= status.up ? "up" : "down" %>
+  </div>
 <% end %>
 
-<%= link_to "Update", update_statuses_path, :method => :post %>
+<%= link_to "Update", update_statuses_path, :method => :post, :class => "pure-button" %>
 
